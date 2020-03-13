@@ -1,0 +1,12 @@
+I = imread('cameraman.tif');
+figure('Name','Original');
+imshow(I);
+firstDerivative = edge(I,'prewitt');
+figure('Name','First Derivative');
+imshow(firstDerivative);
+secondDerivative = edge(I,'log');
+figure('Name','Second Derivative');
+imshow(secondDerivative);
+cannyAlgorithm = edge(I,'canny');
+figure('Name','Canny Algoritm');
+imshow(cannyAlgorithm);
